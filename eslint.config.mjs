@@ -26,11 +26,12 @@ export default [
     rules: {
       // Suppress the error for missing 'import React' in files using JSX
       "react/react-in-jsx-scope": "off",
+      "@typescript-eslint/no-unused-vars": "warn", // or 'off'
 
       // Allow JSX syntax in .js, .jsx, .ts, and .tsx files (useful for Next.js projects)
       "react/jsx-filename-extension": [
         "warn",
-        { extensions: [".js", ".jsx", ".ts", ".tsx"] },
+        { extensions: [".js", ".jsx", ".mjs", ".ts", ".tsx"] },
       ],
     },
   },
